@@ -10,7 +10,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
             if (email.trim() !== "" && password.trim() !== "") {
                 // Redirect to index1.html after login
-                window.location.href = "index1.html";
+                window.location.href = "index2.html";
             } else {
                 alert("Please enter both email and password.");
             }
