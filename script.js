@@ -9,8 +9,7 @@ document.addEventListener("DOMContentLoaded", function () {
             let password = document.getElementById("password").value;
 
             if (email.trim() !== "" && password.trim() !== "") {
-                // Redirect to index1.html after login
-                window.location.href = "index2.html";
+                alert("Login successful!"); // Keeping feedback instead of redirection
             } else {
                 alert("Please enter both email and password.");
             }
