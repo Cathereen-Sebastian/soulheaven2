@@ -59,8 +59,7 @@
             opacity: 0;
             animation: fadeInSlide 2s ease-out forwards;
         }
-        h4{
-        
+        h4 {
             font-family:cursive;
             font-size: 25px;
             color: #f8e8e8;
@@ -68,7 +67,6 @@
             text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
             opacity: 0;
             animation: fadeInSlide 2s ease-out forwards;
-    
         }
         @keyframes fadeInSlide {
             from {
@@ -114,14 +112,14 @@
 </head>
 <body>
     <h1>Soul Heaven</h1>
-    <h4>Digital platfrom for emotional supprt</h4>
+    <h4>Digital platform for emotional support</h4>
     <h2>Your Safe Space for Healing & Growth</h2>
     <button class="switch" onclick="startJourney()">Start Journey</button>
     <footer>Error 404</footer>
 
     <script>
         function startJourney() {
-            alert("Starting your journey...");
+            window.location.href = "base.html"; // Redirects to base.html when clicked
         }
     </script>
 </body>
