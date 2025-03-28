@@ -9,18 +9,18 @@
 }
 
 /* Body */
-body {
-    font-family: 'Poppins', sans-serif;
-    min-height: 100vh;
-    background: url('baspic.jpg') no-repeat center center;
-    background-size: cover;
-    background-attachment: fixed;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 20px;
-}
+    body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: url('meditation.jpg') no-repeat center center/cover;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            overflow: hidden;
+        }
+
 
 /* Header */
 header {
