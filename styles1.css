@@ -27,7 +27,7 @@ body {
 }
 
 /* Animated Background */
-.background-animation {
+/*.background-animation {
     position: fixed;
     top: 0;
     left: 0;
@@ -38,7 +38,7 @@ body {
     animation: animateBG 15s infinite alternate;
     z-index: -1;
 }
-
+*/
 /* Header */
 header {
     background: rgba(255, 255, 255, 0.15);
