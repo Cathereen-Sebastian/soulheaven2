@@ -27,18 +27,18 @@ body {
 }
 
 /* Animated Background */
-/*.background-animation {
+.background-animation {
     position: fixed;
     top: 0;
     left: 0;
     width: 100vw;
     height: 100vh;
-    background: linear-gradient(145deg, #6a11cb, #2575fc);
+    background:  url('baspic.jpg') no-repeat center center/cover;
     background-size: 400% 400%;
     animation: animateBG 15s infinite alternate;
     z-index: -1;
 }
-*/
+
 /* Header */
 header {
     background: rgba(255, 255, 255, 0.15);
