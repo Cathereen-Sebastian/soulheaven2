@@ -1,22 +1,22 @@
-/* Import Google Font */
+/* Import Font */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
 
-/* Global Styles */
+/* Reset */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/* Body */
 body {
     font-family: 'Poppins', sans-serif;
     background: linear-gradient(145deg, #89cff0, #6aafe6);
-    height: 100vh;
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
-    text-align: center;
-    overflow-x: hidden;
+    justify-content: center;
 }
 
 /* Background Animation */
@@ -28,108 +28,84 @@ body {
     height: 100%;
     background: linear-gradient(145deg, #89cff0, #6aafe6);
     background-size: 400% 400%;
-    animation: gradientAnimation 15s ease infinite;
+    animation: animateBG 10s infinite alternate;
     z-index: -1;
 }
 
-/* Gradient Animation */
-@keyframes gradientAnimation {
-    0% { background-position: 0% 50%; }
-    50% { background-position: 100% 50%; }
-    100% { background-position: 0% 50%; }
+@keyframes animateBG {
+    from { background-position: 0% 50%; }
+    to { background-position: 100% 50%; }
 }
 
 /* Header */
 header {
     background: rgba(255, 255, 255, 0.2);
-    backdrop-filter: blur(8px);
     padding: 20px;
-    width: 90%;
-    max-width: 600px;
-    border-radius: 15px;
-    margin-top: 20px;
+    width: 80%;
+    border-radius: 10px;
+    text-align: center;
+    backdrop-filter: blur(10px);
     box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
 }
 
 header h1 {
     font-size: 2.5rem;
-    color: #ffffff;
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
-    margin-bottom: 8px;
+    color: #fff;
 }
 
 header p {
-    font-size: 1.2rem;
     color: #f8f8f8;
+    margin-top: 10px;
 }
 
-/* Main Container */
+/* Container */
 .container {
-    margin-top: 30px;
     background: rgba(255, 255, 255, 0.2);
-    backdrop-filter: blur(12px);
-    padding: 25px;
-    width: 90%;
-    max-width: 600px;
-    border-radius: 15px;
+    backdrop-filter: blur(10px);
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+    width: 80%;
     box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
-    animation: fadeIn 1.5s ease-in-out;
 }
 
 .container h2 {
-    color: #ffffff;
-    font-size: 2rem;
+    color: #fff;
     margin-bottom: 10px;
 }
 
 .container p {
-    color: #f0f0f0;
-    font-size: 1.1rem;
+    color: #eee;
 }
 
 /* Buttons */
 .buttons {
+    margin-top: 15px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 15px;
-    margin-top: 20px;
+    gap: 10px;
 }
 
 .btn {
-    text-decoration: none;
     padding: 15px 30px;
-    font-size: 1.2rem;
-    border-radius: 12px;
+    text-decoration: none;
     color: white;
     background: linear-gradient(145deg, #ff6b6b, #ff8e53);
-    box-shadow: 0 4px 15px rgba(255, 108, 108, 0.3);
-    transition: all 0.3s ease-in-out;
-    font-weight: 600;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    font-size: 1.2rem;
+    transition: all 0.3s ease;
 }
 
 .btn:hover {
     background: linear-gradient(145deg, #ff8e53, #ff6b6b);
     transform: scale(1.1);
-    box-shadow: 0 8px 30px rgba(255, 108, 108, 0.4);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
 }
 
 /* Footer */
 footer {
     margin-top: 20px;
-    color: #ffffff;
-    font-size: 1rem;
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
-}
-
-/* Animation for Fade-in Effect */
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-        transform: translateY(20px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
+    color: #fff;
 }
