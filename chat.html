@@ -5,20 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mood Chatbot</title>
     <style>
-      body {
-    font-family: 'Poppins', sans-serif;
-    background: linear-gradient(to bottom, #a8c0ff, #3f2b96); /* Fallback gradient */
-    background-image: url('pics/bggg.jpg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    margin: 0;
-}
-
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: url('pics/bggg.png') no-repeat center center/cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
         .chat-container {
             width: 400px;
             background: rgba(255, 255, 255, 0.8);
@@ -78,7 +73,7 @@
             box-shadow: 0px 0px 8px rgba(255, 117, 140, 0.5);
         }
         button {
-            background: #ff758c;
+            background: black;
             color: white;
             border: none;
             padding: 10px 15px;
@@ -88,7 +83,7 @@
             transition: 0.3s;
         }
         button:hover {
-            background: #e74c3c;
+            background: #333;
         }
     </style>
 </head>
@@ -98,7 +93,7 @@
             <div class='message bot'>Hello! I'm your mood chatbot 😊 Tell me, how are you feeling today?</div>
         </div>
         <div class="input-container">
-            <input type="text" id="user-input" placeholder="Tell me how you feel...">
+            <input type="text" id="user-input" placeholder="Tell me how you feel..." onkeypress="handleKeyPress(event)">
             <button onclick="sendMessage()">Send</button>
         </div>
     </div>
@@ -142,6 +137,12 @@
                 chatBox.innerHTML += botMessage;
                 chatBox.scrollTop = chatBox.scrollHeight;
             }, 500);
+        }
+
+        function handleKeyPress(event) {
+            if (event.key === "Enter") {
+                sendMessage();
+            }
         }
     </script>
 </body>
